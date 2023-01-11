@@ -78,10 +78,10 @@
 	</div>
 	<div class="container pt-3 pt-lg-5">
 		<div class="kdui-panel p-3">
-			<h4 class="mmb-4">服务器规则</h4>
-			<p class="content">1.大群不可键政，暴论</p>
-			<p class="content">2.但是小群可以</p>
-			<p class="content">3.以后再补充</p>
+			<h4 class="mmb-4">服务器更新日志</h4>
+			<p class="content">1.先凑字数</p>
+			<p class="content">2.先凑字数</p>
+			<p class="content">3.先凑字数</p>
 			<p class="content">4.先凑字数</p>
 			<p class="content">4.先凑字数</p>
 			<p class="content">4.先凑字数</p>
@@ -94,8 +94,10 @@
 			<p class="content">4.先凑字数</p>
 			<p class="content">4.先凑字数</p>
 			<div class="text-right">
-				<a href="https://qm.qq.com/cgi-bin/qm/qr?k=bxPKY3Hf7RtBSZpFuhtH2zPbNmVkB4gX&jump_from=webapi&authKey=U4K/PZX7/681yMmi4QGYNWIQCvf9KaNWzGPi0tjgBpwSv3AIuIjA0KqbVaS4u9LD6" target="_blank">
-					<button class="btn btn-md btn-vertical-stack btn-primary">反馈</button></a>
+					<button id="BT5" class="btn btn-md btn-vertical-stack btn-primary">🤍支持 WINDes🤍</button>
+					<div id="support" class="kdui-panel p-3">
+						<center><img src="./img/afadian.jpg" width="100%"></iframe></center>
+					</div>
 			</div>
 		</div>
 	</div>
@@ -107,7 +109,7 @@
 	<div class="bottom" style="padding-top: 3vh; padding-bottom: 1vh; text-align: center">
 		<p>
 			<a target="_blank" class="content"
-				href="https://qm.qq.com/cgi-bin/qm/qr?k=Cqpysp6Dbu0mi-F-JwgcY4P6qCr4g7nl&jump_from=webapi&authKey=VMDtGwuLhcbKA3CKMVSS6h/Go836zIIbm4INbJT1JxBHIEBNjVZZQvS8VBifKN6Z">加入群聊</a>
+			href="https://space.bilibili.com/38128177?spm_id_from=333.1007.0.0">B站空间</a>
 			| <a href="index.html" class="content"> 返回主页 </a>
 			| <a target="_blank" class="content"
 				href="https://qm.qq.com/cgi-bin/qm/qr?k=73zRsPO76RHtvAtoUpzcGKGMZJPuCJTX&jump_from=webapi&authKey=XAjvoDam5BqZC2VEW80CaR5GXZxIUVEP22cHaU7DfPrNHQp0yEAGs3Q8IF1c4zsk">加入小群</a>
@@ -121,5 +123,13 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/scrollReveal.min.js?ver=0.2.0-rc.1"></script>
-
+<script>
+	$(document).ready(function () {
+		$("#support").slideUp();
+		$("#BT5").click(function () {
+			$("#support").slideDown();
+			$("#BT5").hide();
+		});
+	})
+</script>
 </html>
