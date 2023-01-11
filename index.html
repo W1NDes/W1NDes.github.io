@@ -10,8 +10,14 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
 	<link href="css/swiper.min.css" rel="stylesheet" />
 	<link href="css/ui.css" rel="stylesheet" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 <style>
+	.filter {
+		filter: brightness(70%);
+		-webkit-filter: brightness(70%);
+	}
+
 	.top-bar {
 		background: #8b8b8b;
 		color: #ffffff;
@@ -72,13 +78,11 @@
 </style>
 
 <body>
-	<div class="top-bar">
-	</div>
+	<div class="top-bar"></div>
 	<div class="top">
-		<center ">TLG / 镜花</center>
+		<center>TLG / 镜花</center>
 	</div>
-	<div class=" kdui-toolbox">
-	</div>
+	<div class="kdui-toolbox"></div>
 	<div class="container pt-3 pt-lg-5">
 		<div class="kdui-panel text-black-50" data-scroll-reveal="enter from the top">
 			<div class="swiper-container">
@@ -100,19 +104,22 @@
 			<h4 class="mmb-4">·加入服务器</h4>
 
 			<!-- <h5>在进入游戏之前，请仔细阅读<a href="xieyi.html">
-						<font color="red">《MCBEPU Network游戏协议》</font>
+						<font color="red">《游戏协议》</font>
 					</a></h5> -->
 
-			<p class="content">建筑服IP地址:<span id="content1">CRE.TLG.WORLD</span> 端口:19132</p>
-			<p class="content">建筑服IP地址:<span id="content2">SUR.TLG.WORLD</span> 端口:2022</p>
-
+			<p class="content">
+				建筑服IP地址:<span id="content1">CRE.TLG.WORLD</span> 端口:19132
+			</p>
+			<p class="content">
+				建筑服IP地址:<span id="content2">SUR.TLG.WORLD</span> 端口:2022
+			</p>
 			<div class="text-right">
-				<a id="copyBT1" href="minecraft://?addExternalServer=§l§bTLGE§c建筑服|cre.tlg.world:2022">
+				<a id="copyBT1" href="minecraft://?addExternalServer=§l§bTLG§c建筑服|cre.tlg.world:2022">
 					<button class="btn btn-md btn-vertical-stack btn-primary">
 						加入建筑服
 					</button>
 				</a>
-				<a id="copyBT2" href="minecraft://?addExternalServer=§l§bTLGE§c模组服|sur.tlg.world:19132">
+				<a id="copyBT2" href="minecraft://?addExternalServer=§l§bTLG§c模组服|sur.tlg.world:19132">
 					<button class="btn btn-md btn-vertical-stack btn-primary">
 						加入模组服
 					</button>
@@ -123,12 +130,10 @@
 						加入聊天群
 					</button>
 				</a>
-				<!-- </a>
-          <a href="http://www.itprc.cn/wechat.png">
-            <button class="btn btn-md btn-vertical-stack btn-primary">
-              Wechat with us
-            </button>
-          </a> -->
+				<div id="mcdownload" class="kdui-panel p-3">
+					<center><iframe src="https://mc.minebbs.com/#/" width="980" height="268" scrolling="auto" class="filter" id="ifm"></iframe></center>
+				</div>
+				<button class="btn btn-md btn-vertical-stack btn-primary" id="copyBT4">MC下载</button>
 			</div>
 		</div>
 	</div>
@@ -138,19 +143,11 @@
 			<h4 class="mmb-4">·公告</h4>
 
 			<p class="content">=暂无还没有公告=</p>
-			<p class="content">
-				1.你知道的,wind向来不喜欢写公告。
-			</p>
+			<p class="content">1.你知道的,wind向来不喜欢写公告。</p>
 			<p class="content">
 				2.哦对!这有一条你可以选择知道的,服务器的主理人是WINDes,嗯对不过有时候也叫W1NDes。
 			</p>
-			<div class="text-right">
-				<!--<a href="https://docs.qq.com/form/page/DZHlDV2l4TnlNZ3NC?_w_tencentdocx_form=1" target="_blank">
-						<button class="btn btn-md btn-vertical-stack btn-primary">申请白名单</button>
-					</a>
-					<a href="https://docs.qq.com/doc/DZE9xaXByZ05XZVZE" target="_blank">
-						<button class="btn btn-md btn-vertical-stack btn-primary">查看白名单</button></a> -->
-			</div>
+			<div class="text-right"></div>
 		</div>
 	</div>
 
@@ -158,25 +155,33 @@
 		<div class="kdui-panel p-3">
 			<h4 class="mmb-4">·服务器介绍</h4>
 
-			<p class="content"><em><strong> What you said is biased. First of all, Han Xin can use a skill to speed
-						up the flow of time, which also proves the existence of a perpetual motion machine. Therefore,
-						the fuel for the internal combustion engine of a car can be 3060ti. In such an environment, the
-						oxygen produced by combustion can be Accelerate the greenhouse effect, which is the basic
-						principle of the theory of relativity. Based on this, we can use the Tyndall effect to let the
-						sheep we raise on the bed absorb the gamma rays produced by the photosynthesis of carnivores,
-						and then use the wave-particle dual image of light sex, it can trigger a typhoon in Antarctica.
-						But the game of "Original God" takes place in a fantasy world called "Tivat", where the person
-						chosen by God will be granted the "God's Eye" to guide the power of elements. Players will play
-						a mysterious character named "Traveler". During free travel, they will meet companions with
-						different personalities and unique abilities. Together with them, they will defeat powerful
-						enemies and find their lost relatives. The Truth of "Original God". </strong></em></p>
+			<p class="content">
+				<em><strong>
+						What you said is biased. First of all, Han Xin can use a skill to
+						speed up the flow of time, which also proves the existence of a
+						perpetual motion machine. Therefore, the fuel for the internal
+						combustion engine of a car can be 3060ti. In such an environment,
+						the oxygen produced by combustion can be Accelerate the greenhouse
+						effect, which is the basic principle of the theory of relativity.
+						Based on this, we can use the Tyndall effect to let the sheep we
+						raise on the bed absorb the gamma rays produced by the
+						photosynthesis of carnivores, and then use the wave-particle dual
+						image of light sex, it can trigger a typhoon in Antarctica. But
+						the game of "Original God" takes place in a fantasy world called
+						"Tivat", where the person chosen by God will be granted the "God's
+						Eye" to guide the power of elements. Players will play a
+						mysterious character named "Traveler". During free travel, they
+						will meet companions with different personalities and unique
+						abilities. Together with them, they will defeat powerful enemies
+						and find their lost relatives. The Truth of "Original God".
+					</strong></em>
+			</p>
 			<hr />
 
 			<h5 class="mmb-4">·玩法:</h5>
 
 			<ul class="content">
 				<li>不知道</li>
-
 			</ul>
 		</div>
 	</div>
@@ -193,8 +198,8 @@
 		<p>
 			<a target="_blank" class="content"
 				href="https://qm.qq.com/cgi-bin/qm/qr?k=Cqpysp6Dbu0mi-F-JwgcY4P6qCr4g7nl&jump_from=webapi&authKey=VMDtGwuLhcbKA3CKMVSS6h/Go836zIIbm4INbJT1JxBHIEBNjVZZQvS8VBifKN6Z">加入群聊</a>
-			| <a href="sever_rule.html" class="content"> 服务器规则 </a>
-			| <a target="_blank" class="content"
+			| <a href="sever_rule.html" class="content"> 服务器规则 </a> |
+			<a target="_blank" class="content"
 				href="https://qm.qq.com/cgi-bin/qm/qr?k=73zRsPO76RHtvAtoUpzcGKGMZJPuCJTX&jump_from=webapi&authKey=XAjvoDam5BqZC2VEW80CaR5GXZxIUVEP22cHaU7DfPrNHQp0yEAGs3Q8IF1c4zsk">加入小群</a>
 		</p>
 		<span>
@@ -206,6 +211,47 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/scrollReveal.min.js?ver=0.2.0-rc.1"></script>
+<!-- <script>
+	// document.getElementById('ifm').onload = function () {
+	// 	document.getElementById('ifm')//获取到iframe
+	// 		.contentWindow//获取到iframe的window
+	// 		.document//获取到iframe的document
+	// 		.getElementById('ifmh1')//正常获取元素
+	// 		.style.color = "orange";//修改样式class="n-affix n-affix--affixed" style="bottom: 40px;"
+	var div = $('<div></div>')
+	$("#ifm").on("load", function(){
+	$($(this)[0].contentWindow.document)
+	.find($(".n-affix.n-affix--affixed")).replaceAll($('div'))
+});
+</script> -->
+<script>
+	$(document).ready(function () {
+		$("#mcdownload").slideUp();
+		$("#copyBT4").click(function () {
+			$("#mcdownload").slideDown();
+			$("#copyBT4").hide();
+		});
+	})
+</script>
+<!-- <script>
+	var outside = true;
+	function alertBoxFn(e) {
+		outside = false;
+		alertBox.style.display = "block";
+	}
+	document.getElementById("copyBT4").addEventListener(
+		"click",
+		function () {
+			outside = true;
+		},
+		true
+	);
+	document.getElementById("copyBT4").addEventListener("click", function () {
+		if (outside) {
+			alertBox.style.display = "none";
+		}
+	});
+</script> -->
 <script>
 	var swiper = new Swiper(".swiper-container", {
 		loop: true,

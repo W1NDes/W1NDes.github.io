@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<meta name="author" content="http://www.pipipi.net/" /> 
+<title>犀牛前端部落</title> 
+<style type="text/css">
+body{text-align:center}
+.box{
+  width:200px;
+  height:100px;
+  background-color:green;
+  margin:0px auto;
+}
+</style>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("MBS").slideUp();
+  });
+  $("#show").click(function(){
+    $(".MBS").slideDown();
+  });
+})
+</script>
+</head>
+<body>
+<div class="box" id="MBS">
+    <center><iframe src="https://mc.minebbs.com/#/" width="1000" height="268" scrolling="auto" frameborder="1" id="ifm"></iframe></center>
+</div>
+<input type="button" id="hide" value="点击隐藏"/>
+<input type="button" id="show" value="点击展开"/>
+</body>
+</html>
