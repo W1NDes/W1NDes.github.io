@@ -106,7 +106,7 @@
 
 	<div class="container pt-3 pt-lg-5">
 		<div class="kdui-panel p-3">
-			<h4 class="mmb-4">·加入服务器</h4>
+			<h4 class="mmb-4">·服务器IP</h4>
 			<!-- <h5>在进入游戏之前，请仔细阅读<a href="xieyi.html">
 						<font color="red">《游戏协议》</font>
 					</a></h5> -->
@@ -129,22 +129,52 @@
 					onclick="window.location.href = 'https://qm.qq.com/cgi-bin/qm/qr?k=Cqpysp6Dbu0mi-F-JwgcY4P6qCr4g7nl&jump_from=webapi&authKey=VMDtGwuLhcbKA3CKMVSS6h/Go836zIIbm4INbJT1JxBHIEBNjVZZQvS8VBifKN6Z'">
 					<strong>加入聊天群</strong>
 				</button>
-				<button class="btn btn-md btn-vertical-stack btn-primary" id="copyBT4">
+				<button class="btn btn-md btn-vertical-stack btn-primary" id="copyBT4" >
 					<strong>下载MINECRAFT</strong>
 				</button>
-				<div id="mcdownload" class="kdui-panel p-3">
-					<center>
-						<iframe src="https://mc.minebbs.com/#/" width="100%" height="300" class="filter"></iframe>
-					</center>
-				</div>
+				<button class="btn btn-md btn-vertical-stack btn-primary" id="copyBT5" >
+					<strong>收起下载栏</strong>
+				</button>
 			</div>
+			<div id="mcdownload" class="kdui-panel p-3">
+				<center>
+					<iframe src="https://mc.minebbs.com/#/" width="100%" height="300" class="filter"></iframe>
+				</center>
+			</div>
+			<hr />
+			<h4 class="mmb-4">·服务器状态</h4>
+			<div class="text-right">
+				<button class="btn btn-md btn-vertical-stack btn-primary" id="BT01">
+					<strong>查询建筑服</strong>
+				</button>
+				<button class="btn btn-md btn-vertical-stack btn-primary" id="BT02">
+					<strong>查询模组服</strong>
+				</button>
+			</div>
+
+			<!-- <div id="cremotd" class="p-3">
+				<center>
+					<img src="http://motd.smgoro.top/status_img?host=cre.tlg.world:2022" width="85%"></img </center>
+			</div>
+			<div id="surmotd" class="p-3">
+				<center>
+					<img src="http://motd.smgoro.top/status_img?host=sur.tlg.world:19132" width="85%"></img </center>
+			</div> -->
+			     <!-- smgoro站的服务器状态卡片 -->
+			<div id="cremotd" class="p-3">
+				<center>
+					<img src="https://motdbe.blackbe.work/status_img?host=cre.tlg.world:2022" width="85%"></img </center>
+			</div>
+			<div id="surmotd" class="p-3">
+				<center>
+					<img src="https://motdbe.blackbe.work/status_img?host=sur.tlg.world:19132" width="85%"></img </center>
+			</div>
+				 <!-- 云黑站的服务器状态卡片 -->
 		</div>
 	</div>
-
 	<div class="container pt-3 pt-lg-5">
 		<div class="kdui-panel p-3">
 			<h4 class="mmb-4">·公告</h4>
-
 			<p class="content">=更新日期:2023-01-13=</p>
 			<p class="content">1.服务器目前版本均为1.19.51</p>
 			<p class="content">2.服务器腐竹为WINDes，服务器纯公益运营</p>
@@ -156,21 +186,21 @@
 	<div class="container pt-3 pt-lg-5">
 		<div class="kdui-panel p-3">
 			<h4 class="mmb-4">·服务器介绍</h4>
-
 			<p class="content">
 				<em>
-						TLG全称为：Through the Looking Glass，中文译为：镜花水月。服务器开创于2018年的网易我的世界（建筑服由樱花创立），从简单的租赁服转变至如今的多样生态。</br>
-						建筑服的核心理念是和谐与多元，无论是建筑大佬还是萌新，都能够在服务器中创造属于自己的一片天地。服务器内有着多种建筑辅助工具，帮助你更高效地完成作品，同时服务器会定期开放建筑的导出或是导入，以及光追摄影展，建筑免费渲染等活动；除了建筑以外，还有各种小游戏供你摸鱼！</br>
-						模组服则是以周目概念的概念一直运行着，不同的周目会有着不同的玩法加入，近两期更新是以剑侠大佬等人所制的冬之纪行诗为基础开发的玩法。在模组服中，无氪运营、反作弊插件会为你提供愉快的游玩体验（难度很高），同时，腐竹也会在每个周目和大家一起生存（无op）。</br>
-						RPG服目前仍在艰难的开发过程中，由于缺乏资金导致美术素材等方面进度缓慢，但预计将会在2023年的暑假开启第一次公测。
-					</em>
+					TLG全称为：Through the Looking Glass，中文译为：镜花水月。服务器开创于2018年的网易我的世界（建筑服由樱花创立），从简单的租赁服转变至如今的多样生态。</br>
+					建筑服的核心理念是和谐与多元，无论是建筑大佬还是萌新，都能够在服务器中创造属于自己的一片天地。服务器内有着多种建筑辅助工具，帮助你更高效地完成作品，同时服务器会定期开放建筑的导出或是导入，以及光追摄影展，建筑免费渲染等活动；除了建筑以外，还有各种小游戏供你摸鱼！</br>
+					模组服则是以周目概念的概念一直运行着，不同的周目会有着不同的玩法加入，近两期更新是以剑侠大佬等人所制的冬之纪行诗为基础开发的玩法。在模组服中，无氪运营、反作弊插件会为你提供愉快的游玩体验（难度很高），同时，腐竹也会在每个周目和大家一起生存（无op）。</br>
+					RPG服目前仍在艰难的开发过程中，由于缺乏资金导致美术素材等方面进度缓慢，但预计将会在2023年的暑假开启第一次公测。
+				</em>
 			</p>
 			<hr />
 			<h4 class="mmb-4">·拓展内容:
 			</h4>
 			<button class="btn btn-md btn-vertical-stack btn-primary"
 				onclick="window.location.href = 'http://1.116.40.137:2333'"><strong>建筑服卫星地图</strong></button>
-			<button class="btn btn-md btn-vertical-stack btn-primary" onclick="alert('该功能暂未上线 敬请期待')"><strong>模组服行为记录</strong></button>
+			<button class="btn btn-md btn-vertical-stack btn-primary"
+				onclick="alert('该功能暂未上线 敬请期待')"><strong>模组服行为记录</strong></button>
 			<hr />
 			<h4 class="mmb-4">·注意事项</h4>
 			<h5 class="mmmb-4">
@@ -237,10 +267,35 @@
 </script> -->
 <script>
 	$(document).ready(function () {
-		$("#mcdownload").slideUp();
+		$("#mcdownload").toggle();
+		$("#copyBT5").toggle();
 		$("#copyBT4").click(function () {
-			$("#mcdownload").slideDown();
-			$("#copyBT4").hide();
+			$("#mcdownload").toggle(600)
+			$("#copyBT4").toggle();
+			$("#copyBT5").toggle();
+		});
+		$("#copyBT5").click(function () {
+			$("#mcdownload").toggle(600);
+			$("#copyBT4").toggle();
+			$("#copyBT5").toggle();
+		});
+	});
+</script>
+<script>
+	$(document).ready(function () {
+		$("#cremotd").slideUp();
+		$("#BT01").click(function () {
+			$("#surmotd").slideUp();
+			$("#cremotd").slideDown();
+		});
+	});
+</script>
+<script>
+	$(document).ready(function () {
+		$("#surmotd").slideUp();
+		$("#BT02").click(function () {
+			$("#cremotd").slideUp();
+			$("#surmotd").slideDown();
 		});
 	});
 </script>
