@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)./插件介绍.html -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>插件介绍</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./src/theme-simple.css">
+  <link rel="shortcut icon" href="./src/CALL_light_ico.ico" type="image/x-icon">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css"> -->
+  <style type="text/css">
+    .docsify-copy-code-button,
+    .docsify-copy-code-button span {
+      cursor: pointer;
+      transition: all .25s ease
+    }
+
+    .docsify-copy-code-button {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      overflow: visible;
+      padding: .65em .8em;
+      border: 0;
+      border-radius: 0;
+      outline: 0;
+      font-size: 1em;
+      background: grey;
+      background: var(--theme-color, grey);
+      color: #fff;
+      opacity: 0
+    }
+
+    .docsify-copy-code-button span {
+      border-radius: 3px;
+      background: inherit;
+      pointer-events: none
+    }
+
+    .docsify-copy-code-button .error,
+    .docsify-copy-code-button .success {
+      position: absolute;
+      z-index: -100;
+      top: 50%;
+      right: 0;
+      padding: .5em .65em;
+      font-size: .825em;
+      opacity: 0;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%)
+    }
+
+    .docsify-copy-code-button.error .error,
+    .docsify-copy-code-button.success .success {
+      right: 100%;
+      opacity: 1;
+      -webkit-transform: translate(-115%, -50%);
+      transform: translate(-115%, -50%)
+    }
+
+    .docsify-copy-code-button:focus,
+    pre:hover .docsify-copy-code-button {
+      opacity: 1
+    }
+  </style>
+  <style type="text/css">
+    .docsify-pagination-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      overflow: hidden;
+      margin: 5em 0 1em;
+      border-top: 1px solid rgba(0, 0, 0, .07)
+    }
+
+    .pagination-item {
+      margin-top: 2.5em
+    }
+
+    .pagination-item a,
+    .pagination-item a:hover {
+      text-decoration: none
+    }
+
+    .pagination-item a {
+      color: currentColor
+    }
+
+    .pagination-item a:hover .pagination-item-title {
+      text-decoration: underline
+    }
+
+    .pagination-item:not(:last-child) a .pagination-item-label,
+    .pagination-item:not(:last-child) a .pagination-item-subtitle,
+    .pagination-item:not(:last-child) a .pagination-item-title {
+      opacity: .3;
+      transition: all .2s
+    }
+
+    .pagination-item:last-child .pagination-item-label,
+    .pagination-item:not(:last-child) a:hover .pagination-item-label {
+      opacity: .6
+    }
+
+    .pagination-item:not(:last-child) a:hover .pagination-item-title {
+      opacity: 1
+    }
+
+    .pagination-item-label {
+      font-size: .8em
+    }
+
+    .pagination-item-label>* {
+      line-height: 1;
+      vertical-align: middle
+    }
+
+    .pagination-item-label svg {
+      height: .8em;
+      width: auto;
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1px
+    }
+
+    .pagination-item--next {
+      margin-left: auto;
+      text-align: right
+    }
+
+    .pagination-item--next svg {
+      margin-left: .5em
+    }
+
+    .pagination-item--previous svg {
+      margin-right: .5em
+    }
+
+    .pagination-item-title {
+      font-size: 1.6em
+    }
+
+    .pagination-item-subtitle {
+      text-transform: uppercase;
+      opacity: .3
+    }
+  </style>
+</head>
+
+<body data-page="user/introduction.md" class="ready vsc-initialized sticky">
+  <nav class="app-nav">
+    <ul>
+      <li>🔺说明<ul>
+          <li><a href="./文档格式约定.html" title="">📃指令格式约定</a></li>
+        </ul>
+      </li>
+      <li>🔵关于<ul>
+          <li><a href="./常见问题.html" title="">❓常见问题</a></li>
+          <li><a href="./Bug反馈及建议.html" title="">🐛Bug反馈与建议</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav><a href="https://github.com/superx101/CALL" target="_blank" class="github-corner"
+    aria-label="View source on Github"><svg viewBox="0 0 250 250" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg></a>
+  <section class="cover"
+    style="background: linear-gradient(to left bottom, hsl(180, 100%, 85%) 0%,hsl(110, 100%, 85%) 100%)">
+    <div class="mask"></div>
+    <div class="cover-main">
+      <h1 id="construct-assistant"><a href="http://superx101.gitee.io/call/#/?id=construct-assistant"
+          data-id="construct-assistant" class="anchor"><span>Construct Assistant</span></a></h1>
+      <h1 id="for"><a href="http://superx101.gitee.io/call/#/?id=for" data-id="for" class="anchor"><span>for</span></a>
+      </h1>
+      <h1 id="liteloaderbds"><a href="http://superx101.gitee.io/call/#/?id=liteloaderbds" data-id="liteloaderbds"
+          class="anchor"><span>LiteLoaderBDS</span></a></h1>
+      <p><img src="./src/CALL_light_ico.ico" data-origin="./image/CALL_light_ico.ico" alt="CALL"></p>
+      <ul>
+        <li>
+          <p>建造助手 CALL</p>
+        </li>
+        <li>
+          <p>一个基于LiteLoaderBDS的建造辅助工具</p>
+        </li>
+      </ul>
+      <p><a href="https://github.com/superx101/CALL" target="_blank" rel="noopener">GitHub</a>
+        <a
+          href="http://superx101.gitee.io/call/#/user/install?id=%e6%9c%ac%e6%8f%92%e4%bb%b6%e5%ae%89%e8%a3%85">插件下载</a>
+        <a href="./插件介绍.html?id=%e7%ae%80%e4%bb%8b">文档</a>
+      </p>
+    </div>
+  </section>
+  <main class=""><button class="sidebar-toggle" aria-label="Menu">
+      <div class="sidebar-toggle-button"><span></span><span></span><span></span></div>
+    </button>
+    <aside class="sidebar">
+      <div class="sidebar-nav">
+        <p><a href="https://windes.site/" title="返回主站"><strong>返回主站</strong></a> </p>
+        <ul>
+          <li>用户手册<ul>
+              <li class="collapse"><a href="./插件介绍.html" title="插件介绍">插件介绍</a></li>
+              <li><a href="./文档格式约定.html" title="文档格式约定">文档格式约定</a></li>
+            </ul>
+          </li>
+          <li>功能介绍<ul>
+              <li><a href="./后台命令.html" title="后台命令">后台命令</a></li>
+              <li><a href="./菜单.html" title="菜单">菜单</a></li>
+              <li><a href="./选区.html" title="选区">选区</a></li>
+              <li><a href="./选区操作.html" title="选区操作">选区操作</a></li>
+              <li><a href="./其他操作.html" title="其他操作">其他操作</a></li>
+              <li><a href="./形状.html" title="形状">形状</a></li>
+              <li><a href="./快捷键.html" title="快捷键">快捷键</a></li>
+            </ul>
+          </li>
+          <li>其他<ul>
+              <li><a href="./常见问题.html" title="常见问题">常见问题</a></li>
+              <li><a href="./Bug反馈及建议.html" title="Bug反馈及建议">Bug反馈及建议</a></li>
+              <li><a href="./更新日志.html" title="更新日志">更新日志</a></li>
+              <li><a href="./更多形状包.html" title="更多形状包">更多形状包</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <section class="content">
+      <article class="markdown-section" id="main">
+
+
+        <p><img src="./src/introduction_1.0.0.png" data-origin="../image/introduction_1.0.0.png" alt="CALL"></p>
+        <h1 id="插件介绍"><a href="./插件介绍.html?id=%e6%8f%92%e4%bb%b6%e4%bb%8b%e7%bb%8d" data-id="插件介绍"
+            class="anchor"><span>插件介绍</span></a></h1>
+        <h2 id="简介"><a href="./插件介绍.html?id=%e7%ae%80%e4%bb%8b" data-id="简介" class="anchor"><span>简介</span></a></h2>
+        <p>  Construct Assistant for LiteLoaderBDS,
+          简称CALL、建造助手，是针对<strong>基岩版服务器（BDS）</strong>的辅助建造工具，且提供API支持其他插件开发者拓展CALL的功能。</p>
+        <p><strong>为什么选择CALL？</strong> </p>
+        <ul>
+          <li>
+            <p>
+              <strong><em>指令操作</em></strong><br> CALL中所有操作均支持指令，因此您可以使用命令方块为某一玩家执行CALL操作，例:<br>  <code>/execute @p ~ ~ ~ /call menu</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong><em>用户体验</em></strong><br> CALL致力于提升用户体验，所有基础操作均可使用<strong>GUI</strong>(<strong>图形化界面</strong>)点击完成，不需要过多学习成本。<br> 对于指令，本插件提供了缺省值和<strong>简化版指令</strong>,
+              例如指令:<code>/call area start ~ ~ ~</code>可简化为<code>/ca ar a</code><br> 您也可以将指令绑定到<strong>快捷键</strong>，一键执行，更加方便
+            </p>
+          </li>
+          <li>
+            <p><strong><em>导入导出</em></strong><br> 支持在服务端从外部<strong>导入</strong>结构文件，并将保存的结构<strong>导出</strong>为结构文件 </p>
+          </li>
+          <li>
+            <p><strong><em>多人协作</em></strong><br> 您可与其他玩家<strong>共享</strong>保存的结构</p>
+          </li>
+          <li>
+            <p><strong><em>跨存档</em></strong><br> 复制、保存的结构可<strong>跨存档</strong>使用</p>
+          </li>
+          <li>
+            <p><strong><em>自定义权限</em></strong><br> 后台管理员可<strong>自定义</strong>哪些玩家可以使用CALL</p>
+          </li>
+          <li>
+            <p>
+              <strong><em>大范围</em></strong><br> CALL使用了一种异步等待方式来避免因区块未加载而操作失败。理论上可操作<strong>无限大</strong>区域（无论区块是否已加载）。为保证稳定性，CALL限定了单个区域<strong>最大范围</strong>为
+              <strong>64000 * 320 * 64000</strong>
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong><em>第三方支持</em></strong><br> CALL支持其他开发者编写拓展功能的插件，您可安装<strong>第三方插件</strong>来获取<strong>更多的功能</strong>
+            </p>
+          </li>
+          <li>
+            <p><strong><em>开源免费</em></strong><br> 本插件使用GPL-3.0协议，完全<strong>开源免费</strong><br> 项目地址：<a
+                href="https://github.com/superx101/CALL" target="_blank"
+                rel="noopener">https://github.com/superx101/CALL</a> <em>(首次编写BDS插件，大佬轻喷)</em><br> Bug反馈与建议：<a
+                href="https://jq.qq.com/?_wv=1027&amp;k=9soqRZuV" target="_blank" rel="noopener">691552572</a></p>
+          </li>
+          <li>
+            <p>
+              <strong><em>自动更新</em></strong><br> 自动下载、自动安装、自动重载插件<br> 自1.0.0版本后CALL可在配置中开启自动更新，或输入后台指令<code>call update</code>半自动更新
+            </p>
+          </li>
+          <li>
+            <p><strong><em>文档教程</em></strong><br> CALL为您提供了文档，记录了较为详细的插件安装、使用方法以及第三方插件开发教程</p>
+          </li>
+        </ul>
+        <h2 id="功能"><a href="./插件介绍.html?id=%e5%8a%9f%e8%83%bd" data-id="功能" class="anchor"><span>功能</span></a></h2>
+        <ul>
+          <li><strong><a href="./选区操作.html?id=%e5%a1%ab%e5%85%85-fill">选区填充</a></strong></li>
+          <li><strong><a href="./选区操作.html?id=%e6%b8%85%e9%99%a4-clear">选区清除</a></strong></li>
+          <li><strong><a href="./选区操作.html?id=%e6%9b%bf%e6%8d%a2-replace">选区替换</a></strong></li>
+          <li><strong><a href="./选区操作.html?id=%e5%b9%b3%e7%a7%bb-move">选区平移</a></strong></li>
+          <li><strong><a href="./选区操作.html?id=%e5%a0%86%e5%8f%a0-stack">选区堆叠</a></strong></li>
+          <li><strong><a href="./选区操作.html?id=%e9%95%9c%e5%83%8f-mirror">选区镜像</a></strong></li>
+          <li><strong><a href="./选区操作.html?id=%e6%97%8b%e8%bd%ac-rote">选区旋转</a></strong></li>
+          <li><strong><a href="./其他操作.html?id=%e6%92%a4%e9%94%80-undo">撤销</a></strong></li>
+          <li><strong><a href="./其他操作.html?id=%e6%81%a2%e5%a4%8d-redo">恢复</a></strong></li>
+          <li><strong><a href="./其他操作.html?id=%e5%a4%8d%e5%88%b6-copy">复制</a></strong></li>
+          <li><strong><a href="./其他操作.html?id=%e7%b2%98%e8%b4%b4-paste">粘贴</a></strong></li>
+          <li><strong><a href="./其他操作.html?id=%e4%bf%9d%e5%ad%98-save">保存结构</a></strong></li>
+          <li><strong><a href="./其他操作.html?id=%e5%8a%a0%e8%bd%bd%e7%bb%93%e6%9e%84-load">加载保存</a></strong></li>
+          <li><strong><a href="./其他操作.html?id=%e5%88%a0%e9%99%a4%e7%bb%93%e6%9e%84-delete">删除保存</a></strong></li>
+          <li><strong><a href="./其他操作.html?id=%e7%bb%93%e6%9e%84%e5%85%ac%e5%bc%80-public">共享保存</a></strong></li>
+          <li><strong><a href="./快捷键.html">快捷键</a></strong></li>
+          <li><strong><a href="./形状.html">生成形状</a></strong></li>
+          <li><strong><a href="./后台命令.html?id=%e5%af%bc%e5%85%a5%e7%bb%93%e6%9e%84-import">导入结构</a></strong></li>
+          <li><strong><a href="./后台命令.html?id=%e5%af%bc%e5%87%ba%e7%bb%93%e6%9e%84-export">导出结构</a></strong></li>
+        </ul>
+        <h2 id="形状"><a href="./插件介绍.html?id=%e5%bd%a2%e7%8a%b6" data-id="形状" class="anchor"><span>形状</span></a></h2>
+        <p>当前版本中自带的形状如下：
+          <img src="./src/shape.png" data-origin="../image/shape.png" alt="Shape">
+        </p>
+        <div class="docsify-pagination-container">
+          <div class="pagination-item pagination-item--next">
+            <a href="http://superx101.gitee.io/call/#/user/install">
+              <div class="pagination-item-label">
+                <span>NEXT</span>
+                <svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
+                  <polyline fill="none" vector-effect="non-scaling-stroke" points="2,2 8,8 2,14"></polyline>
+                </svg>
+              </div>
+              <div class="pagination-item-title">安装说明</div>
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script>
+    window.$docsify = {
+      loadSidebar: true,
+      coverpage: true,
+      loadNavbar: true,
+      onlyCover: true,
+      subMaxLevel: 2,
+      maxLevel: 3,
+      // sidebarDisplayLevel: 2,
+      name: '',
+      repo: 'https://github.com/superx101/CALL',
+      count: {
+        countable: true,
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'chinese'
+      },
+      copyCode: {
+        buttonText: '复制',
+        errorText: 'Error',
+        successText: '已复制'
+      },
+      // markdown: {
+      //   renderer: {
+      //     code: function (code, lang) {
+      //       if (lang === "mermaid") {
+      //         return (
+      //           '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
+      //         );
+      //       }
+      //       return this.origin.code.apply(this, arguments);
+      //     }
+      //   }
+      // }
+    }
+
+    // var num = 0;
+    // mermaid.initialize({ startOnLoad: false });
+
+  </script>
+  <!-- Docsify v4 -->
+  <script src="..//js/jquery.min.js"></script>
+  <script src="./src/docsify@4"></script>
+  <script src="./src/docsify-copy-code.min.js"></script>
+  <script src="./src/countable.js"></script>
+  <script src="./src/docsify-pagination.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script> -->
+<script>
+  $(document).ready(function () {
+    alert('本指南选编自superx101的文档站\n感谢Ta的插件编写与说明')
+  });
+</script>
+
+  <div class="progress" style="opacity: 0; width: 0%;"></div>
+</body>
+
+</html>

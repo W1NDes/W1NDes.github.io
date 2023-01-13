@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)./快捷键.html -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>快捷键</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./src/theme-simple.css">
+  <link rel="shortcut icon" href="http://superx101.gitee.io/call/image/CALL_light_ico.ico" type="image/x-icon">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css"> -->
+  <style type="text/css">
+    .docsify-copy-code-button,
+    .docsify-copy-code-button span {
+      cursor: pointer;
+      transition: all .25s ease
+    }
+
+    .docsify-copy-code-button {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      overflow: visible;
+      padding: .65em .8em;
+      border: 0;
+      border-radius: 0;
+      outline: 0;
+      font-size: 1em;
+      background: grey;
+      background: var(--theme-color, grey);
+      color: #fff;
+      opacity: 0
+    }
+
+    .docsify-copy-code-button span {
+      border-radius: 3px;
+      background: inherit;
+      pointer-events: none
+    }
+
+    .docsify-copy-code-button .error,
+    .docsify-copy-code-button .success {
+      position: absolute;
+      z-index: -100;
+      top: 50%;
+      right: 0;
+      padding: .5em .65em;
+      font-size: .825em;
+      opacity: 0;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%)
+    }
+
+    .docsify-copy-code-button.error .error,
+    .docsify-copy-code-button.success .success {
+      right: 100%;
+      opacity: 1;
+      -webkit-transform: translate(-115%, -50%);
+      transform: translate(-115%, -50%)
+    }
+
+    .docsify-copy-code-button:focus,
+    pre:hover .docsify-copy-code-button {
+      opacity: 1
+    }
+  </style>
+  <style type="text/css">
+    .docsify-pagination-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      overflow: hidden;
+      margin: 5em 0 1em;
+      border-top: 1px solid rgba(0, 0, 0, .07)
+    }
+
+    .pagination-item {
+      margin-top: 2.5em
+    }
+
+    .pagination-item a,
+    .pagination-item a:hover {
+      text-decoration: none
+    }
+
+    .pagination-item a {
+      color: currentColor
+    }
+
+    .pagination-item a:hover .pagination-item-title {
+      text-decoration: underline
+    }
+
+    .pagination-item:not(:last-child) a .pagination-item-label,
+    .pagination-item:not(:last-child) a .pagination-item-subtitle,
+    .pagination-item:not(:last-child) a .pagination-item-title {
+      opacity: .3;
+      transition: all .2s
+    }
+
+    .pagination-item:last-child .pagination-item-label,
+    .pagination-item:not(:last-child) a:hover .pagination-item-label {
+      opacity: .6
+    }
+
+    .pagination-item:not(:last-child) a:hover .pagination-item-title {
+      opacity: 1
+    }
+
+    .pagination-item-label {
+      font-size: .8em
+    }
+
+    .pagination-item-label>* {
+      line-height: 1;
+      vertical-align: middle
+    }
+
+    .pagination-item-label svg {
+      height: .8em;
+      width: auto;
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1px
+    }
+
+    .pagination-item--next {
+      margin-left: auto;
+      text-align: right
+    }
+
+    .pagination-item--next svg {
+      margin-left: .5em
+    }
+
+    .pagination-item--previous svg {
+      margin-right: .5em
+    }
+
+    .pagination-item-title {
+      font-size: 1.6em
+    }
+
+    .pagination-item-subtitle {
+      text-transform: uppercase;
+      opacity: .3
+    }
+  </style>
+</head>
+
+<body data-page="user/function/hotkey.md" class="ready vsc-initialized sticky">
+  <nav class="app-nav">
+    <ul>
+      <li>🔺说明<ul>
+          <li><a href="./文档格式约定.html" title="">📃指令格式约定</a></li>
+        </ul>
+      </li>
+      <li>🔵关于<ul>
+          <li><a href="./常见问题.html" title="">❓常见问题</a></li>
+          <li><a href="./Bug反馈及建议.html" title="">🐛Bug反馈与建议</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav><a href="https://github.com/superx101/CALL" target="_blank" class="github-corner"
+    aria-label="View source on Github"><svg viewBox="0 0 250 250" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg></a>
+  <section class="cover"
+    style="background: linear-gradient(to left bottom, hsl(149, 100%, 85%) 0%,hsl(221, 100%, 85%) 100%)">
+    <div class="mask"></div>
+    <div class="cover-main"><!--cover--></div>
+  </section>
+  <main><button class="sidebar-toggle" aria-label="Menu">
+      <div class="sidebar-toggle-button"><span></span><span></span><span></span></div>
+    </button>
+    <aside class="sidebar">
+      <div class="sidebar-nav">
+        <p><a href="https://windes.site/" title="返回主站"><strong>返回主站</strong></a> </p>
+        <ul>
+          <li>用户手册<ul>
+              <li><a href="./插件介绍.html" title="插件介绍">插件介绍</a></li>
+              <li><a href="./文档格式约定.html" title="文档格式约定">文档格式约定</a></li>
+            </ul>
+          </li>
+          <li>功能介绍<ul>
+              <li><a href="./后台命令.html" title="后台命令">后台命令</a></li>
+              <li><a href="./菜单.html" title="菜单">菜单</a></li>
+              <li><a href="./选区.html" title="选区">选区</a></li>
+              <li><a href="./选区操作.html" title="选区操作">选区操作</a></li>
+              <li><a href="./其他操作.html" title="其他操作">其他操作</a></li>
+              <li><a href="./形状.html" title="形状">形状</a></li>
+              <li class="collapse"><a href="./快捷键.html" title="快捷键">快捷键</a></li>
+            </ul>
+          </li>
+          <li>其他<ul>
+              <li><a href="./常见问题.html" title="常见问题">常见问题</a></li>
+              <li><a href="./Bug反馈及建议.html" title="Bug反馈及建议">Bug反馈及建议</a></li>
+              <li><a href="./更新日志.html" title="更新日志">更新日志</a></li>
+              <li><a href="./更多形状包.html" title="更多形状包">更多形状包</a></li>
+            </ul>
+          </li>
+      </div>
+    </aside>
+    <section class="content">
+      <article class="markdown-section" id="main">
+
+
+        <h1 id="快捷键-tool"><a href="./快捷键.html?id=%e5%bf%ab%e6%8d%b7%e9%94%ae-tool" data-id="快捷键-tool"
+            class="anchor"><span>快捷键 <code>tool</code></span></a></h1>
+        <h2 id="概念"><a href="./快捷键.html?id=%e6%a6%82%e5%bf%b5" data-id="概念" class="anchor"><span>概念</span></a></h2>
+        <p>
+          为了方便执行指令、以免与其他插件的热键冲突，CALL提供了一个快捷键机制：<br>您可通过使用一个<strong>特定种类</strong>、<strong>特定名称</strong>的物品<strong>点击任意方块</strong>激活快捷键，激活后将<strong>执行</strong>一组提前绑定好的<strong>指令</strong>序列。
+        </p>
+        <h2 id="绑定指令"><a href="./快捷键.html?id=%e7%bb%91%e5%ae%9a%e6%8c%87%e4%bb%a4" data-id="绑定指令"
+            class="anchor"><span>绑定指令</span></a></h2>
+        <h4 id="指令"><a href="./快捷键.html?id=%e6%8c%87%e4%bb%a4" data-id="指令" class="anchor"><span>指令</span></a></h4>
+        <blockquote>
+          <p>/call &lt;tool | to :enum&gt; &lt;bind | bi :enum&gt; &lt;item :item&gt; &lt;right | left :enum&gt; &lt;cmd
+            :string&gt; &lt;describe :string&gt; [name :string]</p>
+        </blockquote>
+        <ul>
+          <li>
+            <p><code>item</code>：绑定物品的id</p>
+          </li>
+          <li>
+            <p><code>type</code>：快捷键激活方式：<code>right</code>:右键激活 <code>left</code>:左键激活</p>
+          </li>
+          <li>
+            <p><code>cmd</code>：指令组字符串，用;分隔多条指令。例如：<code>"/say hello;/say world"</code></p>
+            <p> 为拓展指令功能，定义如下变量，执行指令时将会把变量计算为指定的值</p>
+            <blockquote>
+              <p><code>posf</code>：点击的浮点坐标对象<br>坐标对象属性：{x, y, z, dimid} //dimid为维度数</p>
+            </blockquote>
+            <blockquote>
+              <p><code>pos</code>：被点击的方块的整数坐标对象<br>坐标对象属性：{x, y, z, dimid} //dimid为维度数</p>
+            </blockquote>
+            <blockquote>
+              <p><code>block</code>：被点击的方块对象<br>方块对象属性请见<a
+                  href="https://docs.litebds.com/zh-Hans/#/LLSEPluginDevelopment/GameAPI/Block" target="_blank"
+                  rel="noopener">LL方块文档</a><br>下表中列出LL2.9.0版本中的方块对象属性：</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th align="center">属性</th>
+                    <th align="center">含义</th>
+                    <th align="center">类型</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="center">block.name</td>
+                    <td align="center">游戏内显示的方块名称</td>
+                    <td align="center">String</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.type</td>
+                    <td align="center">方块标准类型名</td>
+                    <td align="center">String</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.id</td>
+                    <td align="center">方块的游戏内id</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.pos</td>
+                    <td align="center">方块所在坐标</td>
+                    <td align="center">IntPos</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.tileData</td>
+                    <td align="center">方块数据值</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.variant</td>
+                    <td align="center">The block variant</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.translucency</td>
+                    <td align="center">方块透明度</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.thickness</td>
+                    <td align="center">方块厚度</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.isAir</td>
+                    <td align="center">方块是否为空气</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.isBounceBlock</td>
+                    <td align="center">是否为可弹跳方块</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.isButtonBlock</td>
+                    <td align="center">是否为按钮方块</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.isCropBlock</td>
+                    <td align="center">是否为农作物方块</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.isDoorBlock</td>
+                    <td align="center">是否为门方块</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.isFenceBlock</td>
+                    <td align="center">是否为栅栏方块</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.isFenceGateBlock</td>
+                    <td align="center">是否为栅栏门方块</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.isThinFenceBlock</td>
+                    <td align="center">是否为细栅栏方块</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.isHeavyBlock</td>
+                    <td align="center">是否为重的方块</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.isStemBlock</td>
+                    <td align="center">是否为干方块</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.isSlabBlock</td>
+                    <td align="center">是否为半转方块</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.isUnbreakable</td>
+                    <td align="center">方块是否为不可破坏</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">block.isWaterBlockingBlock</td>
+                    <td align="center">方块是否可阻挡水</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                </tbody>
+              </table>
+            </blockquote>
+            <blockquote>
+              <p><code>itemA</code>：物品栏第a格物品对象(a由设置决定)<br>物品属性请见<a
+                  href="https://docs.litebds.com/zh-Hans/#/LLSEPluginDevelopment/GameAPI/Item" target="_blank"
+                  rel="noopener">LL物品文档</a>
+                下表中列出LL2.9.0版本中的物品对象属性：</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th align="center">属性</th>
+                    <th align="center">含义</th>
+                    <th align="center">类型</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="center">itemA.name</td>
+                    <td align="center">游戏内显示的物品名称</td>
+                    <td align="center">String</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.type</td>
+                    <td align="center">物品标准类型名</td>
+                    <td align="center">String</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.id</td>
+                    <td align="center">物品的游戏内id</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.count</td>
+                    <td align="center">这个物品对象堆叠的个数</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.aux</td>
+                    <td align="center">物品附加值（如羊毛颜色）</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.damage</td>
+                    <td align="center">物品当前耐久</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.attackDamage</td>
+                    <td align="center">物品攻击伤害</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.maxDamage</td>
+                    <td align="center">物品最大耐久</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.lore</td>
+                    <td align="center">物品Lore</td>
+                    <td align="center">Array&lt;String, String...&gt;</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isArmorItem</td>
+                    <td align="center">物品是否为盔甲</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isBlock</td>
+                    <td align="center">物品是否为方块</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isDamageableItem</td>
+                    <td align="center">物品是否可被破坏</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isDamaged</td>
+                    <td align="center">物品耐久是否被消耗</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isEnchanted</td>
+                    <td align="center">物品是否已被附魔</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isEnchantingBook</td>
+                    <td align="center">物品是否为附魔书</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isFireResistant</td>
+                    <td align="center">物品是否防火</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isFullStack</td>
+                    <td align="center">物品是否已堆叠到最大堆叠数</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isGlint</td>
+                    <td align="center">物品是否闪烁</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isHorseArmorItem</td>
+                    <td align="center">物品是否为马铠</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isLiquidClipItem</td>
+                    <td align="center">Whether the item is liquid clip</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isMusicDiscItem</td>
+                    <td align="center">物品是否为唱片</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isOffhandItem</td>
+                    <td align="center">物品是否可设置到副手</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isPotionItem</td>
+                    <td align="center">物品是否为药水</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isStackable</td>
+                    <td align="center">物品是否可堆叠</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">itemA.isWearableItem</td>
+                    <td align="center">物品是否可穿戴</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                </tbody>
+              </table>
+            </blockquote>
+            <blockquote>
+              <p><code>itemB</code>：物品栏第b格物品对象(b由设置决定)<br>同上</p>
+            </blockquote>
+            <blockquote>
+              <p><code>itemArr</code>：物品栏数组<br>一个物品对象的数组<br>访问方式举例：itemArr[0] 表示第0格物品栏的物品对象, 获取物品对象后使用方式和itemA一致</p>
+            </blockquote>
+            <blockquote>
+              <p><code>me</code>：使用者自己的玩家对象<br>物品属性请见<a
+                  href="https://docs.litebds.com/zh-Hans/#/LLSEPluginDevelopment/GameAPI/Player" target="_blank"
+                  rel="noopener">LL玩家文档</a><br>下表中列出LL2.9.0版本中的玩家对象属性：</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th align="center">属性</th>
+                    <th align="center">含义</th>
+                    <th align="center">类型</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="center">me.name</td>
+                    <td align="center">玩家名</td>
+                    <td align="center">String</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.pos</td>
+                    <td align="center">玩家所在坐标</td>
+                    <td align="center">FloatPos</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.blockPos</td>
+                    <td align="center">玩家所在的方块坐标</td>
+                    <td align="center">IntPos</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.lastDeathPos</td>
+                    <td align="center">玩家上次死亡的坐标</td>
+                    <td align="center">IntPos</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.realName</td>
+                    <td align="center">玩家的真实名字</td>
+                    <td align="center">String</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.xuid</td>
+                    <td align="center">玩家XUID字符串</td>
+                    <td align="center">String</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.uuid</td>
+                    <td align="center">玩家Uuid字符串</td>
+                    <td align="center">String</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.permLevel</td>
+                    <td align="center">玩家的操作权限等级（0 - 4）</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.gameMode</td>
+                    <td align="center">玩家的游戏模式（0 - 3）</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.canFly</td>
+                    <td align="center">玩家是否可以飞行</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.canSleep</td>
+                    <td align="center">玩家是否可以睡觉</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.canBeSeenOnMap</td>
+                    <td align="center">玩家是否可以在地图上看到</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.canFreeze</td>
+                    <td align="center">玩家是否可以冻结</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.canSeeDaylight</td>
+                    <td align="center">玩家是否能看到日光</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.canShowNameTag</td>
+                    <td align="center">玩家是否可以显示姓名标签</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.canStartSleepInBed</td>
+                    <td align="center">玩家是否可以开始在床上睡觉</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.canPickupItems</td>
+                    <td align="center">玩家是否可以拾取物品</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.maxHealth</td>
+                    <td align="center">玩家最大生命值</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.health</td>
+                    <td align="center">玩家当前生命值</td>
+                    <td align="center">Integer</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.inAir</td>
+                    <td align="center">玩家当前是否悬空</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.inWater</td>
+                    <td align="center">玩家当前是否在水中</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.inLava</td>
+                    <td align="center">玩家是否在熔岩中</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.inRain</td>
+                    <td align="center">玩家是否下雨</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.inSnow</td>
+                    <td align="center">玩家是否在雪中</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.inWall</td>
+                    <td align="center">玩家是否在墙上</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.inWaterOrRain</td>
+                    <td align="center">玩家是否在水中或雨中</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.inWorld</td>
+                    <td align="center">玩家是否在世界</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.inClouds</td>
+                    <td align="center">玩家是否在云端</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.sneaking</td>
+                    <td align="center">玩家当前是否正在潜行</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.speed</td>
+                    <td align="center">玩家当前速度</td>
+                    <td align="center">Float</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.direction</td>
+                    <td align="center">玩家当前朝向</td>
+                    <td align="center">DirectionAngle</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.uniqueId</td>
+                    <td align="center">玩家（实体的）唯一标识符</td>
+                    <td align="center">String</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.langCode</td>
+                    <td align="center">玩家设置的语言的标识符(形如zh_CN)</td>
+                    <td align="center">String</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isLoading</td>
+                    <td align="center">玩家是否已经加载</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isInvisible</td>
+                    <td align="center">玩家是否隐身中</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isInsidePortal</td>
+                    <td align="center">玩家在传送门中</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isHurt</td>
+                    <td align="center">玩家是否受伤</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isTrusting</td>
+                    <td align="center">未知</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isTouchingDamageBlock</td>
+                    <td align="center">玩家是否在能造成伤害的方块上</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isHungry</td>
+                    <td align="center">玩家是否饿了</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isOnFire</td>
+                    <td align="center">玩家是否着火</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isOnGround</td>
+                    <td align="center">玩家是否在地上</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isOnHotBlock</td>
+                    <td align="center">玩家是否在高温方块上（岩浆等）</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isTrading</td>
+                    <td align="center">玩家在交易</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isAdventure</td>
+                    <td align="center">玩家是否是冒险模式</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isGliding</td>
+                    <td align="center">玩家在滑行</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isSurvival</td>
+                    <td align="center">玩家是否是生存模式</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isSpectator</td>
+                    <td align="center">玩家是否是观众模式</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isRiding</td>
+                    <td align="center">玩家是否在骑行</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isDancing</td>
+                    <td align="center">玩家在跳舞？</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isCreative</td>
+                    <td align="center">玩家是否是创造模式</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isFlying</td>
+                    <td align="center">玩家是否在飞行</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isSleeping</td>
+                    <td align="center">玩家是否正在睡觉</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.isMoving</td>
+                    <td align="center">玩家是否正在移动</td>
+                    <td align="center">Boolean</td>
+                  </tr>
+                  <tr>
+                    <td align="center">me.ip</td>
+                    <td align="center">玩家设备IP地址</td>
+                    <td align="center">String</td>
+                  </tr>
+                </tbody>
+              </table>
+            </blockquote>
+            <p> 示例: </p>
+            <table>
+              <thead>
+                <tr>
+                  <th align="center">指令</th>
+                  <th align="center">说明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="center"><code>"/give @s ${block.type} 1 ${block.tileData}"</code></td>
+                  <td align="center">给玩家一个快捷键点击到的方块</td>
+                </tr>
+                <tr>
+                  <td align="center"><code>'/give @s apple;/say "I get an apple"'</code></td>
+                  <td align="center">给玩家一个苹果后说“I get an apple”</td>
+                </tr>
+                <tr>
+                  <td align="center"><code>"/say ${me.xuid}"</code></td>
+                  <td align="center">说出玩家自己的xuid值</td>
+                </tr>
+                <tr>
+                  <td align="center"><code>"/say ${itemArr[0].type}"</code></td>
+                  <td align="center">说出玩家第0号物品栏中物品的种类</td>
+                </tr>
+                <tr>
+                  <td align="center"><code>"/gamemode ${me.isSurvival ? 1 : 0}"</code></td>
+                  <td align="center">如果玩家为生存模式则设置为创造模式，否则设置为生存</td>
+                </tr>
+                <tr>
+                  <td align="center"><code>"/say ${me.pos.x * 2 + 1}"</code></td>
+                  <td align="center">说出现在玩家坐标x值的2倍加1</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li>
+            <p><code>describe</code>：快捷键描述，一个简单的说明，不影响快捷键匹配</p>
+          </li>
+          <li>
+            <p><code>name</code>：物品名称，若不输入则匹配没有名字的物品作为快捷键</p>
+          </li>
+        </ul>
+        <h2 id="解除绑定"><a href="./快捷键.html?id=%e8%a7%a3%e9%99%a4%e7%bb%91%e5%ae%9a" data-id="解除绑定"
+            class="anchor"><span>解除绑定</span></a></h2>
+        <h4 id="指令-1"><a href="./快捷键.html?id=%e6%8c%87%e4%bb%a4-1" data-id="指令-1" class="anchor"><span>指令</span></a>
+        </h4>
+        <blockquote>
+          <p>/call &lt;tool | to :enum&gt; &lt;unbind | un :enum&gt; &lt;item :item&gt; &lt;right | left :enum&gt; [name
+            :string]</p>
+        </blockquote>
+        <ul>
+          <li><code>item</code>：绑定物品的id</li>
+          <li><code>type</code>：快捷键激活方式：<code>right</code>:右键激活 <code>left</code>:左键激活</li>
+          <li><code>name</code>：物品名称，若不输入则匹配没有名字的物品作为快捷键</li>
+        </ul>
+        <h2 id="列出快捷键"><a href="./快捷键.html?id=%e5%88%97%e5%87%ba%e5%bf%ab%e6%8d%b7%e9%94%ae" data-id="列出快捷键"
+            class="anchor"><span>列出快捷键</span></a></h2>
+        <h4 id="指令-2"><a href="./快捷键.html?id=%e6%8c%87%e4%bb%a4-2" data-id="指令-2" class="anchor"><span>指令</span></a>
+        </h4>
+        <blockquote>
+          <p>/call &lt;shape | sh :enum&gt; &lt;list | li :enum&gt;</p>
+        </blockquote>
+        <h2 id="默认快捷键"><a href="./快捷键.html?id=%e9%bb%98%e8%ae%a4%e5%bf%ab%e6%8d%b7%e9%94%ae" data-id="默认快捷键"
+            class="anchor"><span>默认快捷键</span></a></h2>
+        <p class="tip">服务器后台管理员可更换默认快捷键，<strong>实际快捷键</strong>请<strong>以服务器为准</strong></p>
+        <ul>
+          <li><a href="./菜单.html?id=%e6%89%93%e5%bc%80%e8%8f%9c%e5%8d%95-menu">打开菜单</a>:
+            <strong>钟</strong><code>id: minecraft:clock</code></li>
+          <li><a
+              href="./选区.html?id=%e8%ae%be%e7%bd%ae%e9%80%89%e5%8c%baa%e7%82%b9">设置选区a点</a>：<strong>箭矢</strong><code>id: minecraft:arrow</code>
+          </li>
+          <li><a
+              href="./选区.html?id=%e8%ae%be%e7%bd%ae%e9%80%89%e5%8c%bab%e7%82%b9">设置选区b点</a>：<strong>木棍</strong><code>id: minecraft:stick</code>
+          </li>
+          <li><a
+              href="./选区.html?id=%e8%bd%ae%e6%b5%81%e8%ae%be%e5%ae%9aab%e7%82%b9">轮流设定ab点</a>：<strong>木斧</strong><code>id: minecraft:wooden_axe</code>
+          </li>
+          <li><a
+              href="./选区.html?id=%e6%b8%85%e9%99%a4%e9%80%89%e5%8c%ba">取消选区</a>：<strong>剪刀</strong><code>id:minecraft:shears</code>
+          </li>
+          <li><a
+              href="./其他操作.html?id=%e5%a4%8d%e5%88%b6-copy">复制</a>：<strong>烈焰棒</strong><code>id: minecraft:blaze_rod</code>
+          </li>
+          <li><a
+              href="./其他操作.html?id=%e7%b2%98%e8%b4%b4-paste">粘贴</a>：<strong>骨头</strong><code>id: minecraft:bone</code>
+          </li>
+          <li>编辑点击方块的属性：<strong>绿宝石</strong><code>id: minecraft:wooden_emerald</code></li>
+          <li>获取点击的方块：<strong>木稿</strong><code>id: minecraft:wooden_pickaxe</code></li>
+        </ul>
+        <div class="docsify-pagination-container">
+          <div class="pagination-item pagination-item--previous">
+            <a href="./形状.html">
+              <div class="pagination-item-label">
+                <svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
+                  <polyline fill="none" vector-effect="non-scaling-stroke" points="8,2 2,8 8,14"></polyline>
+                </svg>
+                <span>PREVIOUS</span>
+              </div>
+              <div class="pagination-item-title">形状</div>
+            </a>
+          </div>
+
+          <div class="pagination-item pagination-item--next">
+            <a href="http://superx101.gitee.io/call/#/user/function/setting">
+              <div class="pagination-item-label">
+                <span>NEXT</span>
+                <svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
+                  <polyline fill="none" vector-effect="non-scaling-stroke" points="2,2 8,8 2,14"></polyline>
+                </svg>
+              </div>
+              <div class="pagination-item-title">设置</div>
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script>
+    window.$docsify = {
+      loadSidebar: true,
+      coverpage: true,
+      loadNavbar: true,
+      onlyCover: true,
+      subMaxLevel: 2,
+      maxLevel: 3,
+      // sidebarDisplayLevel: 2,
+      name: '',
+      repo: 'https://github.com/superx101/CALL',
+      count: {
+        countable: true,
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'chinese'
+      },
+      copyCode: {
+        buttonText: '复制',
+        errorText: 'Error',
+        successText: '已复制'
+      },
+      // markdown: {
+      //   renderer: {
+      //     code: function (code, lang) {
+      //       if (lang === "mermaid") {
+      //         return (
+      //           '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
+      //         );
+      //       }
+      //       return this.origin.code.apply(this, arguments);
+      //     }
+      //   }
+      // }
+    }
+
+    // var num = 0;
+    // mermaid.initialize({ startOnLoad: false });
+
+  </script>
+  <!-- Docsify v4 -->
+  <script src="./src/docsify@4"></script>
+  <script src="./src/docsify-copy-code.min.js"></script>
+  <script src="./src/countable.js"></script>
+  <script src="./src/docsify-pagination.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script> -->
+
+
+  <div class="progress" style="opacity: 0; width: 0%;"></div>
+</body>
+
+</html>
